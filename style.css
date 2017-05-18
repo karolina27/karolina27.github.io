@@ -1,0 +1,39 @@
+.mygrid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-rows: 40px 20px 80px 20px;
+    grid-template-areas:"header header header"
+        "a b c "
+        "article article article"
+        "footer footer footer";
+
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px dashed yellow;
+}
+
+header {
+    grid-area: header; 
+}
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+c {
+    grid-area: c;
+}
+article{
+    grid-area:article;
+}
+footer[
+grid-area:footer;
+]
