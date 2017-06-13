@@ -1,0 +1,59 @@
+.mygrid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-rows: 40px 20px 80px 20px;
+    grid-template-areas:"header header header"
+        "a b c "
+        "d e f"
+        "g h i"
+        "article article article"
+        "footer footer footer";
+
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: hidden;
+}
+
+header {
+    grid-area: header;
+    background-image: LOGOOO;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+.a {
+    grid-area: a;
+    border-style: hidden;
+    margin: auto;
+    font-size: 25px;
+}
+.b {
+    grid-area: b;
+    border-style: hidden;
+    margin:auto;
+    font-size: 25px;
+}
+.c {
+    grid-area: c;
+    border-style: hidden;
+    margin:auto;
+    font-size: 25px;
+}
+.d {
+    grid-area: ;
+    
+}
+article{
+    grid-area:article;
+}
+footer[
+grid-area:footer;
+]
