@@ -1,39 +1,199 @@
 .mygrid {
-    width: 600px;
+    width:1fr;
     display: grid;
-    grid-gap: 10px;
+     grid-gap: 10px;
+
+    margin:10px auto;
     grid-template-columns: 1fr 1fr 1fr ;
-   grid-template-rows: 40px 20px 80px 20px;
-    grid-template-areas:"header header header"
-        "a b c "
-        "article article article"
-        "footer footer footer";
-
+    grid-template-rows: 800px 40px;
+    grid-template-areas:
+                      "header header header"
+                       "a1 a2 a3"
+    
 }
 
-.mygrid:hover {
-    opacity: 0.2;
+
+
+
+.header {
+    grid-area:header;
+    text-align: center;
+    }
+
+.a{
+    position: relative;
+    width: 100%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-.mygrid>* {
-    border: 1px dashed yellow;
+.a1 {
+    grid-area: a1;
+   border-style: hidden; 
+   margin:auto;
+font-size: 25px; 
+   
 }
 
-header {
-    grid-area: header; 
+.a2{
+    grid-area: a2;
+    border-style: hidden;
+    margin:auto;
+    font-size: 25px;
 }
-.a {
-    grid-area: a;
+
+.a3{
+    grid-area: a3;
+    border-style: hidden; 
+    margin:auto;
+    font-size: 25px;
+    
 }
-.b {
-    grid-area: b;
+.i{
+    background-image: url(1.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
 }
-c {
-    grid-area: c;
+.j{
+    background-image: url(2.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
 }
-article{
-    grid-area:article;
+.k{
+    background-image: url(3.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
 }
-footer[
-grid-area:footer;
-]
+.l{
+    background-image: url(4.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.m{
+    background-image: url(5.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.n{
+    background-image: url(6.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.o{
+    background-image: url(7.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.z{
+     font-size: 50px;
+     text-align: center;
+}
+    
+
+.p{
+    background-image: url(8.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.q{
+    background-image: url(9.jpg);
+    width: 1000px;
+    height: 800px;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.e{
+    font-size: 70px;
+     text-align: center;
+    font-family: cursive;
+    color: paleturquoise;
+
+   
+   
+}
+
+
+.g{
+    font-size: 25px;
+     text-align: center;
+    color: bisque;
+    }
+.f{
+    font-size: 25px;
+     text-align: center;
+}
+
+
+
+a:link {
+    color: red;
+}
+
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: blue;
+}
+
+.text{
+   background-color: beige;
+    color:azure;
+    font-size: 25px;
+    padding: 16px 32px;
+    text-align: center;
+    
+}
+
